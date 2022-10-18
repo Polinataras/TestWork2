@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <label>Выберите направление:
+    <select id="direction">
+      <option value="1">A &rarr; B</option>
+      <option value="2">B &rarr; A</option>
+      <option value="3">A &rarr; B &rarr; A</option>
+    </select>
+  </label>
+
+  <div class="panel" id="blockAB">
+    <label>A &rarr; B
+      <select id="timesAB"></select>
+    </label>
+  </div>
+  <div class="panel" id="blockBA">
+    <label> B &rarr; A
+      <select id="timesBA"></select>
+    </label>
+  </div>
+
+  <div class="panel" id="output"></div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
